@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Task 31–33: Image with alt, width, height -->
+<h2>Embedded Image</h2>
+<img src="https://via.placeholder.com/300"
+     alt="Placeholder example image"
+     width="300"
+     height="200">
+
+<!-- Task 34–41: Table basics + advanced features -->
+<h2>Basic Table</h2>
+
+<table border="1">
+    <caption>Student Scores</caption>
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td rowspan="2">Alex</td>
+            <td>Math</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>85</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Average</td>
+            <td>88</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="3">End of Report</td>
+        </tr>
+    </tfoot>
+</table>
+
+<!-- Task 42: YouTube video -->
+<h2>Embedded Video</h2>
+<iframe width="560" height="315"
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    title="YouTube video"
+    frameborder="0"
+    allowfullscreen>
+</iframe>
+
+<!-- Task 43: Google Map -->
+<h2>Embedded Map</h2>
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019565087624!2d-122.4194!3d37.7749"
+    width="600"
+    height="450"
+    style="border:0;"
+    allowfullscreen
+    loading="lazy">
+</iframe>
+
+<!-- Task 44: Audio player -->
+<h2>Audio Player</h2>
+<audio controls>
+    <source src="sample-audio.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+
+<!-- Task 45: Video player with poster -->
+<h2>Video Player</h2>
+<video width="400" controls poster="https://via.placeholder.com/400x200">
+    <source src="sample-video.mp4" type="video/mp4">
+    Your browser does not support video.
+</video>
+
+<!-- Task 46: Figure and figcaption -->
+<h2>Figure Example</h2>
+<figure>
+    <img src="https://via.placeholder.com/250" alt="Sample figure image">
+    <figcaption>This image demonstrates the figure caption.</figcaption>
+</figure>
+
+<!-- Task 47: Picture element -->
+<h2>Responsive Image</h2>
+<picture>
+    <source media="(min-width: 800px)" srcset="https://via.placeholder.com/600">
+    <source media="(min-width: 400px)" srcset="https://via.placeholder.com/400">
+    <img src="https://via.placeholder.com/300" alt="Responsive example">
+</picture>
+
+<!-- Task 48–50: Weekly schedule table -->
+<h2>Weekly Schedule</h2>
+
+<p>
+    <a href="#monday">Monday</a> |
+    <a href="#tuesday">Tuesday</a> |
+    <a href="#wednesday">Wednesday</a>
+</p>
+
+<table border="1">
+    <tr>
+        <th>Day</th>
+        <th>Activity</th>
+        <th>Time</th>
+    </tr>
+
+    <tr id="monday">
+        <td style="background-image: url('https://via.placeholder.com/50');">
+            Monday
+        </td>
+        <td>Study</td>
+        <td>6–8 PM</td>
+    </tr>
+
+    <tr id="tuesday">
+        <td>Tuesday</td>
+        <td>Workout</td>
+        <td>7–8 AM</td>
+    </tr>
+
+    <tr id="wednesday">
+        <td>Wednesday</td>
+        <td>Project Work</td>
+        <td>5–7 PM</td>
+    </tr>
+</table>
+
+<!-- Task 50: SVG shape -->
+<h2>SVG Example</h2>
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" fill="blue" />
+</svg>
+
+
+</body>
+</html>

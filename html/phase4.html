@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ===================== -->
+<!-- Phase 4: Forms & Input -->
+<!-- ===================== -->
+
+<h2>User Registration Form</h2>
+
+<!-- Task 51 -->
+<form action="#" method="post">
+
+    <!-- Task 61: Fieldset & Legend -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <!-- Task 52, 57, 62, 71 -->
+        <label for="fname">First Name:</label>
+        <input type="text"
+               id="fname"
+               name="fname"
+               placeholder="Enter your first name"
+               value="John"
+               required>
+        <br><br>
+
+        <!-- Task 53 -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <!-- Task 65 -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Task 66 -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="60">
+        <br><br>
+
+        <!-- Task 67 -->
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume">
+        <br><br>
+
+        <!-- Task 68 -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <!-- Task 69 -->
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+        <br><br>
+
+        <!-- Task 70 -->
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file">
+        <br><br>
+
+        <!-- Task 72 -->
+        <label for="disabledField">Disabled Field:</label>
+        <input type="text" id="disabledField" disabled>
+        <br><br>
+
+        <!-- Task 73 -->
+        <label for="readonlyField">Readonly Field:</label>
+        <input type="text" id="readonlyField" value="Cannot edit" readonly>
+        <br><br>
+
+        <!-- Task 74 -->
+        <input type="hidden" name="userId" value="12345">
+
+    </fieldset>
+
+    <br>
+
+    <!-- Task 58 -->
+    <fieldset>
+        <legend>Preferences</legend>
+
+        <!-- Task 58: Radio buttons -->
+        <p>Choose one option:</p>
+
+        <input type="radio" id="option1" name="choice" value="option1">
+        <label for="option1">Option 1</label><br>
+
+        <input type="radio" id="option2" name="choice" value="option2">
+        <label for="option2">Option 2</label><br>
+
+        <input type="radio" id="option3" name="choice" value="option3">
+        <label for="option3">Option 3</label><br><br>
+
+        <!-- Task 59: Checkboxes -->
+        <p>Select your interests:</p>
+
+        <input type="checkbox" id="html" name="interest" value="html">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="css" name="interest" value="css">
+        <label for="css">CSS</label><br>
+
+        <input type="checkbox" id="js" name="interest" value="js">
+        <label for="js">JavaScript</label><br><br>
+
+        <!-- Task 60 -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">--Select--</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+        </select>
+        <br><br>
+
+        <!-- Task 61 -->
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+        <br><br>
+
+        <!-- Task 75 -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search">
+        <br><br>
+
+        <!-- Task 74: Datalist -->
+        <label for="browser">Favorite Browser:</label>
+        <input list="browsers" id="browser" name="browser">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+            <option value="Safari">
+        </datalist>
+
+    </fieldset>
+
+    <br>
+
+    <!-- Task 54 -->
+    <button type="submit">Submit</button>
+
+    <!-- Task 55 -->
+    <button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>
